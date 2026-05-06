@@ -429,6 +429,70 @@ h2 {
 .project-coming { opacity: 0.5; pointer-events: none; }
 .project-coming:hover { transform: none; }
 
+/* BOOK CTA */
+.book-cta {
+  max-width: 560px;
+  margin: 0 auto 32px;
+}
+.btn-book {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--gold);
+  color: var(--black);
+  text-decoration: none;
+  padding: 20px 32px;
+  width: 100%;
+  transition: all 0.25s;
+}
+.btn-book:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+.btn-book-icon { font-size: 26px; flex-shrink: 0; }
+.btn-book-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+.btn-book-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--black);
+}
+.btn-book-sub {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgba(8,10,15,0.6);
+  font-weight: 400;
+}
+.btn-book-arrow {
+  font-size: 22px;
+  color: rgba(8,10,15,0.5);
+  flex-shrink: 0;
+}
+
+.contact-divider {
+  max-width: 560px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.contact-divider::before,
+.contact-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
 /* CONTACT */
 #contact {
   background: var(--dark);
@@ -513,7 +577,7 @@ footer {
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="btn-primary" style="padding:10px 24px;font-size:11px;">Let's Connect</a>
+  <a href="https://calendar.app.google/WA9NCrUuRStBY9sj9" target="_blank" class="btn-primary" style="padding:10px 24px;font-size:11px;">Book a Call</a>
 </nav>
 
 <!-- HERO -->
@@ -758,6 +822,20 @@ footer {
     <div class="section-eyebrow fade-up">Get in Touch</div>
     <h2 class="fade-up">Let's have<br>a conversation</h2>
     <p class="section-lead fade-up">If you're exploring what fractional sales support, revenue consulting, or AI strategy could look like for your organization — I'd genuinely enjoy the conversation. No pressure, just a good discussion.</p>
+
+    <div class="book-cta fade-up">
+      <a href="https://calendar.app.google/WA9NCrUuRStBY9sj9" target="_blank" class="btn-book">
+        <span class="btn-book-icon">📅</span>
+        <span class="btn-book-text">
+          <span class="btn-book-label">Book a Free 30-Min Call</span>
+          <span class="btn-book-sub">Pick a time that works for you</span>
+        </span>
+        <span class="btn-book-arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="contact-divider fade-up"><span>or reach out directly</span></div>
+
     <div class="contact-grid">
       <a href="https://www.linkedin.com/in/john-minella-33156433/" target="_blank" class="contact-item fade-up">
         <div class="contact-item-icon">💼</div>
